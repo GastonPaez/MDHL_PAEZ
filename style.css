@@ -1,0 +1,18 @@
+
+h1 {
+
+}
+
+nav {
+    text-align: right;
+}
+
+.logo {
+    display: inline-block;
+    background: darkblue;
+    
+}
+
+.upcoming, .contact {
+    display: inline-block;
+}
