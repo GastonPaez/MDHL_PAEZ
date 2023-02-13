@@ -1,21 +1,26 @@
 
-h1 {
+body {
+    background-color: antiquewhite;
+}
 
+h1 {    
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
 }
 
 nav {
     text-align: right;
-}
-
-
-
- 
+} 
 
 a {
     border: 1px solid black;
-    padding: 5px;
+    padding: 10px;
     background: rgb(25, 67, 184);
     color: white;
+    font-size: 25px;
+    text-decoration: none;
 }
 
 .active {
@@ -25,28 +30,49 @@ a {
 .image_nav {
     width: 100%;
     background-image: url(./assets/hockey_6.jpeg);
-    height: 405px;  
+    height: 350px;  
     background-position: center;
+    background-size: cover;
+    
 }
 
-.upcoming > h2 {
+.title > h2 {
     border: 1px solid black;
     text-align: center;
-}
-
-.content_upcoming {
-    background-color: antiquewhite;
+    padding: 20px;
+    font-size: 35px;
+    margin: 0px;
 }
 
 .logo {
     display: inline-block;
-    background: darkblue;
+    background: darkblue;  
+    vertical-align:top;
     
 }
 
 
-.contact, .articles {
+.contact, .articles, .articles_about {
     display: inline-block;    
     margin-left: 100px;
+    font-size: 20px;
 }
 
+.articles_about, .articles {
+    width: 60%;    
+    
+}
+
+
+.gallery {
+    margin-top: 100px;
+}
+
+.img_gallery {
+    height: 200px;
+    display: inline-block;
+}
+
+.gallery_title {
+    font-size: 50px;
+}
