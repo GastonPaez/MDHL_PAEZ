@@ -1,25 +1,48 @@
+* {
+    --black-MDHL: #000000;
+    --red-MDHL: #cf0a0a;
+    --orange-MDHL: #DC5F00;
+    --white-MDHL: #EEEEEE;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(247,87,0,1) 0%, rgba(249,0,0,1) 90.1% );
+    
+}
 
 h1 {
-
+    margin-top: 50px;
+    font-size: 80px;
+    text-align: center;
+    color: var(--white-MDHL);
 }
 
 nav {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    
 }
 
-
-
- 
 
 a {
     border: 1px solid black;
-    padding: 5px;
-    background: rgb(25, 67, 184);
+    padding: 10px;
+    background: var(--black-MDHL);
     color: white;
+    font-size: 20px;
+    margin-left: 7px;
+    border-radius: 10%;
+    text-decoration: none;
 }
 
 .active {
-    background: green;
+    background: var(--orange-MDHL);
+    color: var(--black-MDHL);
+    font-weight: bold;
 }
 
 .image_nav {
@@ -27,26 +50,137 @@ a {
     background-image: url(./assets/hockey_6.jpeg);
     height: 405px;  
     background-position: center;
+    background-size: cover;
 }
 
-.upcoming > h2 {
-    border: 1px solid black;
+.upcoming > h2, .title_separator {
+    border: 2px solid var(--white-MDHL);;
     text-align: center;
+    padding: 5px;
+    color: var(--white-MDHL);
+    font-size: 2em;
 }
 
-.content_upcoming {
-    background-color: antiquewhite;
-}
-
-.logo {
-    display: inline-block;
-    background: darkblue;
+.subtitle {
+    text-align: center;
+    font-size: 2em;
+    color: var(--white-MDHL);
     
 }
 
-
-.contact, .articles {
-    display: inline-block;    
-    margin-left: 100px;
+.content_upcoming, .content_about, .content_contact {
+    
+    display: flex;
 }
 
+.logo {
+    display: flex;    
+        
+}
+
+.contact, .articles {
+    display: flex;    
+    flex-direction: column;    
+    margin-left: 100px;    
+    background-color: #eeeeee23;
+    border: 2px solid var(--black-MDHL);
+    padding: 25px;
+}
+
+/* ||||||||||||| LIST ||||||||||| */
+.info-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    min-height: fit-content;    
+}
+
+.info-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;    
+    min-height: 40vh;
+    max-width: 80%;
+    gap: 20px;
+}
+
+.info-section {
+    background-color: #eeeeee23;
+    border: 5px var(--black-MDHL) solid;
+    border-radius: 5px;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.info-section > p {
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+ol > li > ol {
+    list-style-type: upper-latin;
+}
+
+li {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+
+/* ||||||||||||| TABLE ||||||||||| */
+
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    background-color: aliceblue;
+    height: 50vh;
+    width: 40rem;
+    table-layout: auto;
+    border-spacing: 5px;
+    border-collapse: collapse;
+    /* empty-cells: hide; */
+    caption-side: bottom;
+}
+
+table, th, td {
+    border: 5px solid;
+    border-color: black;
+    text-align: center;
+}
+
+th {
+    background-color: black;
+    color: aliceblue;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+/*
+tr:nth-child(end) {
+    background-color: var(--red-MDHL)
+    }
+*/
+
+tr:hover {
+    background-color: var(--orange-MDHL)
+}
+
+.information {
+    margin-top: 35px;
+    border: 2px solid var(--black-MDHL);
+    border-radius: 5px;
+    padding: 40px;
+    background-color: #eeeeee23;
+}
