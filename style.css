@@ -87,6 +87,105 @@ a {
     padding: 25px;
 }
 
+.sec_gallery {
+    margin-top: 100px;
+    border-top: 2px solid var(--white-MDHL);
+}
+.gallery {
+    display: flex;
+
+}
+
+.gallery > img {
+    width: 300px;
+    border: 2px solid var(--black-MDHL);
+
+}
+
+/*|||||||||||||||||||||| FORM |||||||||||||||||*/
+
+
+.registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form, form > section {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--white-MDHL); 
+    margin-top: 100px;   
+    
+}
+
+form > section {
+    border: 5px solid var(--black-MDHL);
+    padding: 30px;
+    margin: 15px;
+
+}
+
+form > input {
+    width: 250px;
+}
+
+.gender {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.player_info > input {
+    width: 60%;
+    margin: 4px;
+    
+}
+
+form > div > button {
+    
+    width: 80px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.btn_submit {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#date_signature, #parent {
+    background: #2e2c2c00;
+    border: none;
+    border-bottom: 2px solid var(--white-MDHL);
+    color: var(--white-MDHL);
+    font-size: 30px;    
+}
+
+
+.grade {
+    display: flex;
+    gap: 25px;
+}
+
+.grade > label {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;    
+    font-size: 15px;   
+    
+}
+
+
 /* ||||||||||||| LIST ||||||||||| */
 .info-container {
     display: flex;
