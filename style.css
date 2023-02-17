@@ -9,38 +9,47 @@
 
 body {
     
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(247,87,0,1) 0%, rgba(249,0,0,1) 90.1% );
-    
+    background-image: url(./assets/marble.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
+main {
+    margin-bottom: 200px;
+}
 h1 {
     margin-top: 50px;
     font-size: 80px;
     text-align: center;
-    color: var(--white-MDHL);
+    color: var(--black-MDHL);
 }
 
-nav {
+.nav {
     display: flex;
     justify-content: flex-end;
-    padding: 5px;
-    
+    padding: 15px;
+    background: var(--black-MDHL);            
 }
 
-
 a {
-    border: 1px solid black;
+    border: 2px solid var(--orange-MDHL);
     padding: 10px;
     background: var(--black-MDHL);
     color: white;
     font-size: 20px;
     margin-left: 7px;
-    border-radius: 10%;
+    border-radius: 55px;
     text-decoration: none;
 }
 
-.active {
+a:hover{
     background: var(--orange-MDHL);
+    color: var(--black-MDHL);
+    font-weight: bold;
+}
+
+.active {
+    background: var(--white-MDHL);
     color: var(--black-MDHL);
     font-weight: bold;
 }
@@ -54,28 +63,33 @@ a {
 }
 
 .upcoming > h2, .title_separator {
-    border: 2px solid var(--white-MDHL);;
+    border: 2px solid var(--black-MDHL);;
     text-align: center;
     padding: 5px;
-    color: var(--white-MDHL);
+    color: var(--dark-MDHL);
     font-size: 2em;
 }
 
 .subtitle {
     text-align: center;
     font-size: 2em;
-    color: var(--white-MDHL);
+    color: var(--dark-MDHL);
     
 }
 
 .content_upcoming, .content_about, .content_contact {
     
     display: flex;
+    margin-left: 50px;    
 }
 
 .logo {
     display: flex;    
         
+}
+
+#articles {
+    margin-left: 30vh;
 }
 
 .contact, .articles {
@@ -88,17 +102,41 @@ a {
 }
 
 .sec_gallery {
+    
     margin-top: 100px;
     border-top: 2px solid var(--white-MDHL);
+
 }
 .gallery {
     display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    
 
 }
 
 .gallery > img {
     width: 300px;
     border: 2px solid var(--black-MDHL);
+
+}
+
+/*|||||||||||||||||||||| INDEX |||||||||||||||||*/
+.articles > article > h3 {
+    background: hsla(197, 14%, 57%, 1);
+    background: linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(197, 14%, 57%, 1) 0%, hsla(192, 17%, 94%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#8399A2", endColorstr="#EEF2F3", GradientType=1 );
+    padding: 10px;
+
+}
+.articles > article > p {
+    margin-left: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    
 
 }
 
@@ -140,20 +178,21 @@ form, form > section {
     flex-direction: column;
     font-weight: bold;
     font-size: 25px;
-    color: var(--white-MDHL); 
-    margin-top: 100px;   
-    
+    color: var(--dark-MDHL); 
+
 }
 
 form > section {
     border: 5px solid var(--black-MDHL);
     padding: 30px;
     margin: 15px;
+    margin-top: 20px;  
 
 }
 
 form > input {
-    width: 250px;
+    width: 250px;    
+    
 }
 
 .gender {
@@ -166,6 +205,9 @@ form > input {
 .player_info > input {
     width: 60%;
     margin: 4px;
+    height: 30px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
     
 }
 
@@ -180,13 +222,15 @@ form > div > button {
     margin: 50px;
     display: flex;
     justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 #date_signature, #parent {
     background: #2e2c2c00;
     border: none;
-    border-bottom: 2px solid var(--white-MDHL);
-    color: var(--white-MDHL);
+    border-bottom: 2px solid var(--black-MDHL);
+    color: var(--dark-MDHL);
     font-size: 30px;    
 }
 
@@ -228,8 +272,7 @@ form > div > button {
     background-color: #eeeeee23;
     border: 5px var(--black-MDHL) solid;
     border-radius: 5px;
-    padding: 50px;
-    width: 100%;
+    padding: 50px;    
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -315,4 +358,81 @@ tr:hover {
     border-radius: 5px;
     padding: 40px;
     background-color: #eeeeee23;
+}
+
+@media (max-width:1072px){
+
+    h1 {
+        margin-top: 25px;
+        font-size: 3rem;
+    }
+
+    .nav {
+        justify-content: center;
+        
+    }    
+
+    .image_nav {
+        height: 300px;
+    }
+
+    .content_upcoming, .content_about, .content_contact {
+        flex-direction: column;        
+        align-items: center;
+        gap: 10px;
+    }
+
+    .content_about{
+        margin: 0px;
+    }
+    
+    .articles {
+        margin: 0px;
+    }
+
+    #articles {
+        margin: 0;
+        padding: 30px;       
+        
+    }
+
+    .sec_gallery {
+        margin-top: 100px;           
+        width: 100%;        
+        display: flex;
+        flex-direction: column;             
+        justify-content: center;
+    }
+
+    .gallery {
+        gap: 50px;
+    }
+    .info-container {
+        min-height: auto;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .info-box {
+        margin: 0px;
+        padding: 0px;
+        max-width: 100%;        
+        justify-content: flex-end;
+        min-height: auto;
+    }
+
+    .info-section {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .contact {
+        margin: 0;
+    }
+}
+
+@media (max-width:425px){
+    
+    h1{
+        font-size: 2rem;
+    }
 }
