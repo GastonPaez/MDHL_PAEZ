@@ -25,17 +25,19 @@
     </header>
     <main>
         <h2 class="title_separator">Registration Form</h2>
-        <section class="registration">
+        <div class="registration">
+
             <div class="register-container">
                 <form action="./show_data.html" method="get">
                     <section class="player_info">
+                        <h2>Player Information:</h2>
                         <label for="name">Player's First Name:</label>
                         <input type="text" name="name" id="name">
                         <label for="lastname">Last Name:</label>
                         <input type="text" name="lastname" id="lastname">
                         <label for="address">Street Address:</label>
                         <input type="text" name="address" id="address">
-                        <label for="City">City</label>
+                        <label for="city">City</label>
                         <input type="text" name="city" id="city">
                         <label for="cp">Zip Code</label>
                         <input type="number" name="cp" id="cp">
@@ -45,7 +47,7 @@
                     <section>
                         <h2>Gender:</h2>
                         <div class="gender">
-                            <label for="gender"></label>
+                            
                             <label for="female">
                                 Female
                                 <input type="radio" name="gender" id="female" value="f">
@@ -59,9 +61,8 @@
 
                     <section>
                         <h2>Grade:</h2>
-                        <div class="grade">
-                            <label for="grade"></label>
-                            <label for="">Pre-School
+                        <div class="grade">                            
+                            <label for="pre">Pre-School
                                 <input type="radio" name="grade" id="pre">
                             </label>
                             <label for="1st">1 st
@@ -95,19 +96,19 @@
                             Greenbay
                         </label>
                         <label for="ha">
-                            <input type="radio" name="" id="ha" value="ha">
+                            <input type="radio" name="school" id="ha" value="ha">
                             Howard A Yeager
                         </label>
                         <label for="mp">
-                            <input type="radio" name="" id="mp" value="mp">
+                            <input type="radio" name="school" id="mp" value="mp">
                             Marjorie P Hart
                         </label>
                         <label for="ne">
-                            <input type="radio" name="" id="ne" value="ne">
+                            <input type="radio" name="school" id="ne" value="ne">
                             North Elementary
                         </label>
                         <label for="se">
-                            <input type="radio" name="" id="se" value="se">
+                            <input type="radio" name="school" id="se" value="se">
                             South Elementary
                         </label>
                     </section>         
@@ -134,33 +135,32 @@
                     </section>
 
                     <section>
-                        <h2>Uniform Size:</h2>
-                        <label for="uniform"></label>
-                        <label for="uniform">
+                        <h2>Uniform Size:</h2>                        
+                        <label for="youthSmall">
                             <input type="radio" name="uniform" id="youthSmall" value="youthSmall">
                             Youth Small
                         </label>
-                        <label for="uniform">
+                        <label for="youthMedium">
                             <input type="radio" name="uniform" id="youthMedium" value="youthMedium">
                             Youth Medium
                         </label>
-                        <label for="uniform">
+                        <label for="youthLarge">
                             <input type="radio" name="uniform" id="youthLarge" value="youthLarge">
                             Youth Large
                         </label>
-                        <label for="uniform">
+                        <label for="small">
                             <input type="radio" name="uniform" id="small" value="small">
                             Small
                         </label>
-                        <label for="uniform">
+                        <label for="medium">
                             <input type="radio" name="uniform" id="medium" value="medium">
                             Medium
                         </label>
-                        <label for="uniform">
+                        <label for="large">
                             <input type="radio" name="uniform" id="large" value="large">
                             Large
                         </label>
-                        <label for="uniform">
+                        <label for="extraLarge">
                             <input type="radio" name="uniform" id="extraLarge" value="extraLarge">
                             Extra Large
                         </label>
@@ -172,7 +172,7 @@
                             I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and i consideration fo the "League" accepting the registrant for its hockey programs and activities, I hereaby realease, discharge, and/or otherwise indemnfy MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, which transportation.
                         </p>
                         <p>By signing below, I herebyagree and authorizethe above. In addition, by signing below, I also acknowledge that i have read the cancellation policy and agree to its trems.</p>
-                        <label for="signature">
+                        <label for="parent">
                             Parent / Guardian Signature:
                             <input type="text" name="parent" id="parent">                        
                         </label>
@@ -186,7 +186,7 @@
                     </div>           
                 </form>
             </div>  
-        </section>
+        </div>
     </main>
 </body>
 </html>
